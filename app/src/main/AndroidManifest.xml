@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".Home">
         </activity>
+        <activity android:name=".ItemScreen">
+        </activity>
     </application>
 
 </manifest>

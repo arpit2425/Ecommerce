@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Pizza"
+              android:id="@+id/textitem"
+              android:textSize="25sp"
+              android:padding="15dp"
+              android:textColor="#fff8f8"
+              android:textStyle="bold"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="300"
+              android:id="@+id/textprice"
+    android:textSize="20dp"
+              android:textColor="#fff8f8"
+   android:layout_marginLeft="25sp"
+    android:textStyle="bold"/>
+
+</LinearLayout>
