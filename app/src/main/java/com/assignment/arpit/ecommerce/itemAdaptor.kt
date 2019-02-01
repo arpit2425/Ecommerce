@@ -9,9 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.item.view.*
 
-class itemAdaptor(var context:Context,var list:ArrayList<ClipData.Item>): RecyclerView.Adapter<RecyclerView.ViewHolder> (){
+class itemAdaptor(var c:Context,var list:ArrayList<items>): RecyclerView.Adapter<RecyclerView.ViewHolder> (){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        var v:View=LayoutInflater.from(context).inflate(R.layout.item,parent,false)
+        var v=LayoutInflater.from(c).inflate(R.layout.item,parent,false)
         return ItemHolder(v)
 
 
@@ -24,8 +24,8 @@ class itemAdaptor(var context:Context,var list:ArrayList<ClipData.Item>): Recycl
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-//        (holder as ItemHolder).bind(list[position].name,)
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        (holder as ItemHolder).bind(list[position].name,list[position].price)
+
     }
 
     class ItemHolder(itemView:View):RecyclerView.ViewHolder(itemView)
